@@ -1,0 +1,55 @@
+TRUFFLE FRAMEWORK
+npm install -g truffle
+## install truffle which allow us to create ethereum DAPPS on ethereum network
+## it give us set of tools to write smart contracts in solidity programming lang
+## deploy smart contract to blockchain
+## testing smart contracts
+## write client side app using truffle
+
+GANACHE
+## LOCAL MEMORY blockchain FOR DEVELOPEMEMT PURPOSE
+## LOCAL blockchain 
+
+METAMASK EXTENSION
+## PLUGIN HELPS IN CONNECTING BROWSER TO blockchain 
+
+
+
+
+# this provides a boilerplate code to start faster
+truffle unbox pet-shop
+
+commands:
+truffle migrate (for deploying smart contracts)
+truffle console (gives us a truffle console to work with smart contract)
+
+
+
+
+// here we are getting information about the Election smart contract
+// which we deployed and storing in a 'app' varibale
+// promise concept being used
+Election.deployed().then(function(instance){app = instance})
+
+// gives all accounts connected in the network
+web3.eth.accounts
+web3.eth.accounts[0]
+
+transaction receipt
+whenver we write(do any activity on) the blockchain we are actually creating transactions and the transactions are grouped
+into blocks which are chained together to create a blockchain. whenver we do a new transaction
+we get a transaction receipt
+
+//GAS
+ethereum network determines the concept of gas i.e whenever a user
+writes on a blockchain it will cost him gas
+reads are free on blockchain
+// gas is a unit 
+// gas usage * gas price = ethereum
+
+
+
+
+
+
+ npm run dev to run server 
